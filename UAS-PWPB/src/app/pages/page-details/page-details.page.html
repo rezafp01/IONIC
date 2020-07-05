@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Nama</ion-label>
+    <ion-input name="nama" [(ngModel)]="todo.nama"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Daily Aktivitas</ion-label>
+    <ion-input name="daily" [(ngModel)]="todo.daily"></ion-input>
+  </ion-item>
+    <ion-button color="primary"  (click)="editing ? updateTask():addTask()">
+      Simpan
+    </ion-button>
+</ion-content>

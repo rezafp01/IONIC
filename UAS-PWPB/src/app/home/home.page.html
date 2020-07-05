@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list *ngFor="let todo of tasks">
+    <ion-item-sliding>
+      <ion-item>
+        <ion-label>{{todo.nama}}</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="removeTask(todo.id)" color="danger">delete</ion-item-option>
+      </ion-item-options>
+      <ion-item-options side="start">
+        <ion-item-option [routerLink]="['/details', todo.id]" color="secondary">edit</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+    <ion-fab-button routerLink="/details" routerDirection="forward">
+    <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

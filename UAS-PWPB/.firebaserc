@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-firestore-27824": {
+      "hosting": {
+        "app": [
+          "angular-firestore-27824"
+        ]
+      }
+    }
+  }
+}
