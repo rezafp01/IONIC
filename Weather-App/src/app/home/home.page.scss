@@ -1,0 +1,31 @@
+.temp {
+  background: #1ebf7d;
+  display: flex;
+  border-radius: 50%;
+  color: white;
+  width: 50px;
+  justify-content: center;
+  height: 50px;
+  box-shadow: 0px 0px 7px 4px #d8d2d2;
+  align-items: center;
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+.img-size {
+  height: 100px;
+  width: 100px;
+}
+.weather-details {
+  line-height: 2;
+}
+.padding-top5 {
+  padding-top: 5px;
+}
+.error-msg {
+  text-align: center;
+  font-size: 1.2em;
+  color: gray;
+  text-transform: uppercase;
+}
